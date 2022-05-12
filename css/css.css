@@ -1,0 +1,455 @@
+
+.typetext{
+    width: 695px;
+    height: 30px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 3px;
+    margin: 10px 0;
+
+}
+#formgender{
+    border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+#quoctich{
+    border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    font-size: 20px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.chon{
+    font-size: 25px;
+}
+#info{
+    margin: 10px 0;
+    width: 695px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+}
+#sothich{
+    border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin:10px 0;
+    
+}
+.check{
+    box-shadow:  1px 1px 3px black;
+    height: 15px;
+    width: 15px;
+}
+#btn{
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: grey;
+    font-weight: bold;
+    font-size: 30px;
+}
+.dangky>header{
+    background-image: url(https://i0.wp.com/the-avocado.org/wp-content/uploads/2020/08/FCgDYSPyp4GTsvmhVMaUP6.jpg?fit=1200%2C630&ssl=1);
+    width: 1200px;
+    height: 380px;
+}
+.dangky>nav>ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(39, 39, 83);
+    margin: 0;
+}
+.dangky>nav>ul>li{
+    padding: 10px 80px;
+    
+    
+}
+.dangky>nav>ul>li:hover{
+    background-color: rgb(1, 2, 12);
+}
+.dangky>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.dangky>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+.dangky{
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+.dangky>h1{
+    margin-left: 150px;
+}
+
+.dangky>footer{
+    background-image: url(albumn/uefa_still0023.jpg);
+    height: 450px;
+    width: 1200px;
+    clear: both;
+    margin: 0px;
+}
+.dangky>footer>img{
+    text-align: center;
+    float: right;
+    margin-right: 130px;
+    margin-top: 100px;
+}
+ 
+.ft_tc>li{
+    list-style: none;
+    margin: 50px 40px;
+    
+}
+.ft_tc>li>a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.ft_tong{
+    display: flex;
+    list-style: none;
+}
+.ft_tc1{
+    list-style: none;
+}
+.ft_tc1>li>a{
+text-decoration: none;
+color: aliceblue;
+}
+.ft_tc1>li{
+    list-style: none;
+    margin: 50px 40px;   
+}
+
+.dk{
+    margin-left: 200px;
+    border: 1px solid black;
+    padding: 40px;
+    box-shadow: 1px 1px 5px 1px black;
+    width: 700px;
+    background-color: rgb(199, 198, 198);
+
+}
+
+.dangky>aside {
+    background-image: url(albumn/5458515.jpg);
+
+}
+@keyframes doimau {
+    0% {
+        color: rgb(5, 205, 255);
+    }
+    50% {
+        color: rgb(255, 0, 191);
+    }
+    100% {
+        color: #feca21;
+    }
+}
+.dangky>aside>h1{
+    animation: doimau 1s ease infinite;
+    -webkit-animation: doimau 1s ease infinite;
+}
+
+
+
+/*------BÁN HÀNG----------*/
+
+.banhang{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+   
+}
+
+#select{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    float: left;
+    margin-left: 450px;
+
+}
+
+.nhap{
+width: 300px;
+margin: 5px;
+height: 30px;
+}
+.tieude{
+    width: 200px;
+}
+.banhang>header{
+    background-image: url(https://i0.wp.com/the-avocado.org/wp-content/uploads/2020/08/FCgDYSPyp4GTsvmhVMaUP6.jpg?fit=1200%2C630&ssl=1);
+    width: 1200px;
+    height: 380px;
+}
+.banhang>nav>ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(39, 39, 83);
+    margin: 0;
+}
+.banhang>nav>ul>li{
+    padding: 10px 80px;
+    
+    
+}
+.banhang>nav>ul>li:hover{
+    background-color: rgb(1, 2, 12);
+}
+.banhang>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.banhang>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+
+.banhang>footer{
+    background-image: url(albumn/uefa_still0023.jpg);
+    height: 450px;
+    width: 1200px;
+    clear: both;
+    margin: 0px;
+}
+.banhang>footer>img{
+    text-align: center;
+    float: right;
+    margin-right: 130px;
+    margin-top: 100px;
+}
+ 
+.ft_tc>li{
+    list-style: none;
+    margin: 50px 40px;
+    
+}
+.ft_tc>li>a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.ft_tong{
+    display: flex;
+    list-style: none;
+}
+.ft_tc1{
+    list-style: none;
+}
+.ft_tc1>li>a{
+text-decoration: none;
+color: aliceblue;
+}
+.ft_tc1>li{
+    list-style: none;
+    margin: 50px 40px;   
+}
+
+#table_sp{
+    margin-left: 90px;
+    background-color: rgb(199, 198, 198);
+    box-shadow: 0 0 5px black;
+}
+.banhang>aside{
+    background-image: url(albumn/back1.png);
+}
+.bh>h1{
+    animation: doimau 1s ease infinite;
+    -webkit-animation: doimau 1s ease infinite;
+}
+/*--------------Albumn----------------*/
+
+.albumn{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.albumn>header{
+    background-image: url(https://i0.wp.com/the-avocado.org/wp-content/uploads/2020/08/FCgDYSPyp4GTsvmhVMaUP6.jpg?fit=1200%2C630&ssl=1);
+    width: 1200px;
+    height: 380px;
+}
+.albumn>nav>ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(39, 39, 83);
+    margin: 0;
+}
+.albumn>nav>ul>li{
+    padding: 10px 80px;
+    
+    
+}
+.albumn>nav>ul>li:hover{
+    background-color: rgb(1, 2, 12);
+}
+.albumn>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.albumn>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+.albumn>aside{
+    float: left;
+    width: 100%;
+    clear: both;
+    margin: 0;
+    height: 560px;
+}
+#albumn{
+    width: 100%;
+    height: 560px;
+    margin: 0;
+}
+.albumn>footer{
+    background-image: url(albumn/uefa_still0023.jpg);
+    height: 450px;
+    width: 1200px;
+    clear: both;
+    margin: 0px;
+}
+.albumn>footer>img{
+    text-align: center;
+    float: right;
+    margin-right: 130px;
+    margin-top: 100px;
+}
+ 
+.ft_tc>li{
+    list-style: none;
+    margin: 50px 40px;
+    
+}
+.ft_tc>li>a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.ft_tong{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.ft_tc1{
+    list-style: none;
+}
+.ft_tc1>li>a{
+text-decoration: none;
+color: aliceblue;
+}
+.ft_tc1>li{
+    list-style: none;
+    margin: 50px 40px;   
+}
+.banhang>aside{
+    background-color:rgb(199, 198, 198) ;
+}
+.bh{
+    margin-left: 50px;
+}
+
+/*              trangchu             */
+
+
+.trangchu{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.trangchu>header{
+    background-image: url(https://i0.wp.com/the-avocado.org/wp-content/uploads/2020/08/FCgDYSPyp4GTsvmhVMaUP6.jpg?fit=1200%2C630&ssl=1);
+    width: 1200px;
+    height: 380px;
+}
+.trangchu>nav>ul{
+    list-style: none;
+    display: flex;
+    background-color: rgb(39, 39, 83);
+    margin: 0;
+}
+.trangchu>nav>ul>li{
+    padding: 10px 80px;
+    
+    
+}
+.trangchu>nav>ul>li:hover{
+    background-color: rgb(1, 2, 12);
+}
+.trangchu>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.trangchu>nav>ul>li>a:hover{
+    text-decoration: underline;
+}
+
+.trangchu>footer{
+    background-image: url(albumn/uefa_still0023.jpg);
+    height: 450px;
+    width: 1200px;
+    clear: both;
+    margin: 0px;
+}
+.trangchu>footer>img{
+    text-align: center;
+    float: right;
+    margin-right: 130px;
+    margin-top: 100px;
+}
+
+.trangchu > aside{
+    width: 75%;
+    float: left;
+    clear: both;
+    background-color: rgb(40, 40, 197);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.trangchu > article {
+    width: 25%;
+    float: right;
+    background-color:  rgb(40, 40, 197);;
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+
+.trangchu > article > ul > li >img{
+    width: 300px;
+    height: 200px;
+}
+.trangchu > article > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.trangchu > article > ul > li > a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.trangchu > article > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.trangchu > article > ul > li   :hover{
+    -webkit-transform: scale(1.2); transform: scale(1.2); 
+    transition: all 1s;
+}
+
+
+

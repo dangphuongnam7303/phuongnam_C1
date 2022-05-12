@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng ký chuyển nhượng</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js"></script>
+    <style>
+        
+
+        #masv_error{
+            color: red;
+        }
+        #hoten_error{
+            color: red;
+        }
+        #email_error{
+            color: red;
+        }
+        #gender_error{
+            color: red;
+        }
+        #sothich_error{
+            color: red;
+        }
+        #quoctich_error{
+            color: red;
+        }
+        #ghichu_error{
+            color: red;
+        }
+
+
+         .loi{
+            width: 700px;
+            height: 30px;
+            border: 2px solid red;
+            background-color: yellow;
+            border-radius: 3px;
+            box-shadow: 5px red;
+
+        }
+        
+
+        .loi2{
+            width: 700px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: yellow;
+            border-radius: 3px;
+            box-shadow: 5px red;
+        }
+
+        .gender_true{
+            border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin: 10px 0;
+        }
+
+        .sothich_true{
+            border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin:10px 0;
+        }
+
+        .ghichu_true{
+            margin: 10px 0;
+    width: 695px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+        }
+
+        .quoctich_true{
+            border: 1px solid black;
+    width: 700px;
+    height: 30px;
+    font-size: 20px;
+    box-shadow:  1px 1px 3px black;
+    border-radius: 3px;
+    margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dangky">
+        <header>
+
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="trangchu.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="albumn.html">
+                     Danh sách bom tấn
+                    </a>
+                </li>
+                <li>
+                    <a href="dangky.html">
+                        Đăng ký chuyển nhượng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="banhang.html">
+                        Danh sách chuyển nhượng
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <aside>
+            <br>
+            
+            <h1 style="text-align: center; margin: 0px;">ĐĂNG KÝ CHUYỂN NHƯỢNG</h1>
+<br>
+<form method="post" onsubmit="return validate()" >
+            <div class="dk">
+                
+                <div>
+                    <a style="font-size: 25px;">Mã sinh viên</a> <br>
+                    <input placeholder="VD: PH26892" id="masv" name="masv" class="typetext" type="text"> <br>
+                    <span id="masv_error"> </span>
+
+                </div>
+
+<br>
+                <div>
+                    <a style="font-size: 25px;">Họ và tên</a> <br>
+                    <input placeholder="VD: Đặng Phương Nam" id="hoten" name="hoten" class="typetext" type="text"> <br>
+                    <span id="hoten_error"> </span>
+
+                </div>
+<br>
+
+                <div>
+                    <a style="font-size: 25px;">Email</a> <br>
+                    <input placeholder="VD: Namdpph26892@gmail.com" id="email" name="email" class="typetext"
+                        type="text"> <br>
+                    <span id="email_error"> </span>
+
+                </div>
+
+
+<br>
+                <div>
+                    <a style="font-size: 25px;">Giới tính</a>
+                    <div id="formgender" name="formgender" >
+                        <input id="man" name="gender" type="radio" value="Nam" id="nam">Nam
+                        <input id="male" name="gender" type="radio" value="Nữ" id="nu">Nữ <br>
+
+                    </div>
+                    <span id="gender_error"></span>
+                </div>
+<br>
+
+                <div>
+                    <a style="font-size: 25px;">Sở thích</a>
+
+                    <div id="sothich">
+                        <input type="checkbox" class="check" name="sothich" value="Đọc sách">Đọc sách
+                        <input type="checkbox" class="check" name="sothich" value="Du lịch">Du lịch
+                        <input type="checkbox" class="check" name="sothich" value="Âm nhạc">Âm nhạc
+                        <input type="checkbox" class="check" name="sothich" value="Đọc sách">Đọc sách
+                        <input type="checkbox" class="check" name="sothich" value="Ẩm thực">Ẩm thực
+                        <input type="checkbox" class="check" name="sothich" value="Khác">Khác
+
+                    </div>
+                    <span id="sothich_error"></span>
+           </div>
+<br>
+                <div>
+                    <a style="font-size: 25px;">Quốc tịch</a> <br>
+                    <select name="country" id="quoctich" >
+                        <option name="quoctich" class="chon"  value="-1">[Chọn quốc tịch]</option>
+
+                        <option name="quoctich" class="chon" value="1">Việt Nam</option>
+                        <option name="quoctich" class="chon" value="2">Hàn Quốc</option>
+                        <option name="quoctich" class="chon" value="3">Nhật Bản</option>
+                        <option name="quoctich" class="chon" value="4">Brazil</option>
+                        <option name="quoctich" class="chon" value="5">Campuchia</option>
+                        <option name="quoctich" class="chon" value="6">Lào</option>
+
+
+                    </select>
+                    <br>
+                    <span id="quoctich_error"></span>
+                </div>
+<br>
+                <div>
+                    
+                    <a style="font-size: 25px;">Ghi chú</a> <br>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                    <br>
+                    <span id="ghichu_error"></span>
+                </div>
+<br>
+                <div>
+                    <button  id="btn" 
+                         name="btn">Đăng ký</button>
+                
+                </div>
+
+            </form>
+            </div>
+            
+            <br>
+            <br>
+        </aside>
+        <footer>
+            <img
+                src="https://upload.wikimedia.org/wikinews/en/thumb/e/e2/UEFA_Champions_League_logo.png/250px-UEFA_Champions_League_logo.png">
+            <ul class="ft_tong">
+                <li>
+                    <ul class="ft_tc">
+                        <li><a href="https://www.uefa.com/uefachampionsleague/stories/">Latest</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/fixtures-results/#/rd/2001310-1">Fixtures
+                                & results</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/standings/"> Groups</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/draws/">Draws</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/clubs/">Clubs</a></li>
+                    </ul>
+
+
+                </li>
+                <li>
+
+
+                    <ul class="ft_tc1">
+                        <li><a href="https://www.uefa.com/uefachampionsleague/statistics/">Stats</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/final/">Final</a></li>
+                        <li><a href="https://gaming.uefa.com/en/uefachampionsleague">Gaming</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/history/">History</a></li>
+                        <li><a href="https://www.uefa.com/uefachampionsleague/about/">About</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>

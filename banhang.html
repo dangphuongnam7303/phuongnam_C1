@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách chuyển nhượng</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+    <div class="banhang">
+        <header>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="trangchu.html">
+                    Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="albumn.html">
+                     Danh sách bom tấn
+                    </a>
+                </li>
+                <li>
+                    <a href="dangky.html">
+                    Đăng ký chuyển nhượng
+                    </a>
+                </li>
+ 
+                <li>
+                    <a href="banhang.html">
+                    Danh sách chuyển nhượng
+                    </a>
+                </li>
+              
+            </ul>
+        </nav>
+        <aside>
+            <br>
+            <div class="bh">
+        <h1 style="margin-top: 0px;">THỊ TRƯỜNG CHUYỂN NHƯỢNG MÙA HÈ 2022</h1>
+        
+        <select id="select" onchange="chonmucgia()">
+            <option class="mucgia" value="-1">Mức giá</option>
+            <option class="mucgia" value="200">0-200</option>
+            <option class="mucgia" value="400">0-400</option>
+            <option class="mucgia" value="600">0-600</option>
+            <option class="mucgia" value="800">0-800</option>
+        </select>
+        <br>
+<hr style="width: 940px; float: left; margin-left: 90px;">
+<br>
+        <table border="1" id="table_sp">
+            <tr>
+                
+
+                <th colspan="2" class="tieude">Cầu thủ(FC)</th>
+                <th class="tieude">Giá chuyển nhượng</th>
+                <th class="tieude">Số lượng</th>
+                <th class="tieude">Thành tiền</th>
+
+            </tr>
+
+            <tr>
+                <td>      <input name="chon" onclick="tich_checkbox(0)" value="chon_hang" type="checkbox">           </td>
+                <td>Manchester United</td>
+                <td name="gia">700</td>
+                <td> <input onkeyup="thanhtien(this)"  name="soluong" disabled value="0" class="nhap"  type="number" min="0" > </td>    
+                <td name="thanhtien"></td>
+                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(1)" value="chon_hang" type="checkbox"></td>
+                <td>Manchester City</td>
+                <td name="gia">400</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0" class="nhap"  min="0" max="20">       </td>
+                <td name="thanhtien"></td>                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(2)" value="chon_hang" type="checkbox"></td>
+                <td>Barcelona</td>
+                <td name="gia">100</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0" class="nhap" min="0" max="20">                </td>               
+                <td name="thanhtien"></td>
+                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(3)" value="chon_hang" type="checkbox"></td>
+                <td>Real Marid</td>
+                <td name="gia">450</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0"  class="nhap" min="0" max="20">                </td>               
+                <td name="thanhtien"></td>
+                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(4)" value="chon_hang" type="checkbox"></td>
+                <td>Paris Saint-Germain</td>
+                <td name="gia">180</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0" class="nhap" min="0" max="20">                </td>
+                <td name="thanhtien"></td>
+                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(5)" value="chon_hang" type="checkbox"></td>
+                <td>Liver Pool</td>
+                <td name="gia">600</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0"  class="nhap" min="0" max="20">                </td>               
+                <td name="thanhtien"></td>
+                
+            </tr>
+
+            <tr>
+                <td><input name="chon" onclick="tich_checkbox(6)" value="chon_hang" type="checkbox"></td>
+                <td>Arsenal</td>
+                <td name="gia">90</td>
+                <td><input onkeyup="thanhtien(this)" type="number" name="soluong" disabled value="0" class="nhap" min="0" max="20">                </td>                
+                <td name="thanhtien"></td>
+            </tr>
+
+        <tr class="tong">
+            <td colspan="4" style="text-align: center;height: 50px;font-size: 20px;" ><strong>TỔNG</strong></td>
+            <td id="tinhtong" style="color: red; font-weight: bold;font-size: 20px;"></td>
+        </tr>
+        </table>
+        <br>
+        <br>
+            </div>
+        </aside>
+
+        <footer>
+            <img src="https://upload.wikimedia.org/wikinews/en/thumb/e/e2/UEFA_Champions_League_logo.png/250px-UEFA_Champions_League_logo.png">
+            <ul class="ft_tong">
+                <li>
+            <ul class="ft_tc">
+                <li><a href="https://www.uefa.com/uefachampionsleague/stories/">Latest</a></li>
+                    <li><a href="https://www.uefa.com/uefachampionsleague/fixtures-results/#/rd/2001310-1">Fixtures & results</a></li>
+                    <li><a href="https://www.uefa.com/uefachampionsleague/standings/"> Groups</a></li>
+                    <li><a href="https://www.uefa.com/uefachampionsleague/draws/">Draws</a></li>
+                    <li><a href="https://www.uefa.com/uefachampionsleague/clubs/">Clubs</a></li>
+            </ul>
+            
+            
+                </li>
+                <li>
+            
+            
+            <ul class="ft_tc1">
+            <li><a href="https://www.uefa.com/uefachampionsleague/statistics/">Stats</a></li>
+            <li><a href="https://www.uefa.com/uefachampionsleague/final/">Final</a></li>
+            <li><a href="https://gaming.uefa.com/en/uefachampionsleague">Gaming</a></li>
+            <li><a href="https://www.uefa.com/uefachampionsleague/history/">History</a></li>
+            <li><a href="https://www.uefa.com/uefachampionsleague/about/">About</a></li>
+            </ul>
+            
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
